@@ -18,27 +18,83 @@
 # What is MonsterROM?
 MonsterROM is a work-in-progress custom firmware for Samsung Galaxy devices. It's based on the latest and greatest iteration of Samsung's UX and it also includes additional features and tweaks to ensure the best possible experience out of the box.
 It is based on the UN1CA build system which allows automatic downloading/extraction of the firmware, applying the required patches and generating a flashable zip package for the specified target device.
-MonsterROM supports devices using the Exynos 2100 SoCs
+MonsterROM supports devices using multiple platforms including Exynos (9820, 990, 2100, 2200) and Snapdragon (8550) SoCs, with more platforms coming soon
 
 Any form of contribution, suggestions, bug report or feature request for the project will be welcome.
 
 # Features
+
+## 🚀 **Core Features**
 - Based on the latest pre-release OneUI 8.5 Galaxy S24+ firmware
 - All software features from S24+
 - S25 Ultra CSC, ringtones and more
-- Moderately Debloated
 - Full Galaxy AI support
 - Now Brief Support
 - Super HDR support
-- Adaptive Brightness support
-- Adaptive Refresh Rate support (for some models)
 - Multi-User support
 - EroFS partitions
-- Stock models in Settings and user apps
 - High end animations
 - Native/live blur support
-- Debloated from useless system services/additional apps
-- Countless other small optimizations
+
+## 🎨 **Advanced Theming System**
+- Dynamic theming with multiple built-in themes (Monster Dark, Monster Light, AMOLED Black)
+- Material You integration with wallpaper-based colors
+- Custom accent colors and icon packs
+- Gaming mode and productivity mode themes
+- Scheduled dark mode with sunset detection
+- Per-app theming support
+
+## 🔧 **Multi-Platform Support**
+- **Exynos platforms**: 9820, 990, 2100, 2200
+- **Snapdragon platforms**: 8550 (with more coming soon)
+- **MediaTek support**: Coming soon
+- Universal debloating system across all platforms
+- Platform-specific optimizations
+
+## 📱 **Foldable Enhancements (B5Q - Galaxy Z Flip5)**
+- Enhanced cover display functionality with widgets and apps
+- Advanced Flex mode optimizations for camera and video
+- Foldable-specific gestures and productivity features
+- Dual display power management
+- Seamless display transitions
+
+## ⚡ **Performance Optimizations**
+- Adaptive Brightness and Refresh Rate support
+- Platform-specific performance tuning (Snapdragon Adreno GPU, Exynos Mali GPU)
+- Gaming mode with reduced animations and performance boost
+- Advanced memory management and background app limits
+- F2FS filesystem support for better storage performance
+
+## 🛡️ **Advanced Security & Privacy**
+- Enhanced app permissions system
+- Network traffic monitoring and blocking
+- Advanced firewall with per-app rules
+- Anti-tracking features
+- Secure folder enhancements
+
+## 🎮 **Gaming Features**
+- Snapdragon Elite Gaming optimizations
+- Gaming mode auto-detection
+- Performance profiles (battery saver, balanced, performance, gaming)
+- Reduced input latency and optimized touch response
+
+## 🧹 **Universal Debloating System**
+- Configurable debloat profiles (minimal, moderate, aggressive)
+- Platform-agnostic bloatware removal
+- Category-based debloating (Samsung, Google, Carrier, Social Media)
+- Detailed debloat reports
+
+## 🔊 **Audio Enhancements**
+- High-resolution audio support up to 192kHz
+- Spatial audio for foldables
+- Qualcomm audio enhancements (Snapdragon devices)
+- Advanced audio effects and processing
+
+## 📶 **Connectivity Features**
+- Wi-Fi 7 support (where hardware supports)
+- Enhanced hotspot features (WPA3, 6GHz, Wi-Fi 6)
+- Advanced Bluetooth codecs (aptX, aptX HD)
+- 5G and eSIM optimizations
 
 # Bugs
 Some Small Camerastuffs.
@@ -114,14 +170,26 @@ Original UN1CA credits:
 - *All the UN1CA project contributors and testers ❤️*
 
 # Kernel sources and device trees
-- 9820 Kernel Source Code (Maintainer: @ExtremeXT): https://github.com/ExtremeXT/M62-backport
-- 9820 Device Tree Code (Maintainer: @ExtremeXT): https://github.com/ExtremeXT/android_device_samsung_exynos9820
-- 990 Kernel Source Code (Maintainer: @ExtremeXT): https://github.com/ExtremeXT/990_upstream_v2
-- 990 Device Tree Code (Maintainer: @ExtremeXT): https://github.com/ExtremeXT/android_device_samsung_exynos9820
-- 2100 Kernel Source Code (Maintainer: @xfwdrev/@maximusXZ): https://github.com/xfwdrev/android_kernel_samsung_ex2100
-- 2100 Device Tree Code (Maintainer: @xfwdrev/@maximusXZ): https://github.com/xfwdrev/android_device_samsung_exynos2100
-- 2200 Kernel Source Code (Maintainer: @dupazlasu): https://github.com/ExtremeXT/android_kernel_samsung_s5e9925
-- 2200 Device Tree Code (Maintainer: @dupazlasu): https://github.com/dupazlasu/android_device_samsung_s5e9925
+
+## 🔧 **Exynos Platforms**
+- **9820 Kernel Source Code** (Maintainer: @ExtremeXT): https://github.com/ExtremeXT/M62-backport
+- **9820 Device Tree Code** (Maintainer: @ExtremeXT): https://github.com/ExtremeXT/android_device_samsung_exynos9820
+- **990 Kernel Source Code** (Maintainer: @ExtremeXT): https://github.com/ExtremeXT/990_upstream_v2
+- **990 Device Tree Code** (Maintainer: @ExtremeXT): https://github.com/ExtremeXT/android_device_samsung_exynos9820
+- **2100 Kernel Source Code** (Maintainer: @xfwdrev/@maximusXZ): https://github.com/xfwdrev/android_kernel_samsung_ex2100
+- **2100 Device Tree Code** (Maintainer: @xfwdrev/@maximusXZ): https://github.com/xfwdrev/android_device_samsung_exynos2100
+- **2200 Kernel Source Code** (Maintainer: @dupazlasu): https://github.com/ExtremeXT/android_kernel_samsung_s5e9925
+- **2200 Device Tree Code** (Maintainer: @dupazlasu): https://github.com/dupazlasu/android_device_samsung_s5e9925
+
+## 📱 **Snapdragon Platforms**
+- **8550 Kernel Source Code** (B5Q - Galaxy Z Flip5): Coming soon
+- **8550 Device Tree Code** (B5Q - Galaxy Z Flip5): Coming soon
+- **8650 Support** (Snapdragon 8 Gen 3): Planned
+- **7550 Support** (Snapdragon 7+ Gen 3): Planned
+
+## 🚀 **Future Platform Support**
+- **MediaTek Dimensity**: Under development
+- **Additional Snapdragon platforms**: Based on community demand
 
 # Stargazers over time
 [![Stargazers over time](https://starchart.cc/devcore94/MonsterROM.svg)](https://starchart.cc/devcore94/MonsterROM)
